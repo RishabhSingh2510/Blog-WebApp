@@ -1,0 +1,11 @@
+<%- include("partials/header.ejs") %>
+
+<!-- <h1>contact</h1> -->
+<form action="<%= `/editblog/${file}` %>" method="post">
+    <!-- <input name="heading" type="text" class="feedback-input" placeholder="Heading" />
+    <input name="author" type="text" class="feedback-input" placeholder="Your Name" /> -->
+    <textarea name="text" class="feedback-input" placeholder="Blog"><%= editText %></textarea>
+    <input type="submit" value="SUBMIT" />
+</form>
+
+<%- include("partials/footer.ejs") %>
